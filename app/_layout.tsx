@@ -9,11 +9,16 @@
 //   ); 
 // }
 import { Stack } from 'expo-router';
+import { StatusBar } from 'react-native';
+
 
 export default function Root() {
     return (
-        <Stack>
-            <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
-        </Stack>
+        <>
+            <Stack>
+                <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+            </Stack>
+            <StatusBar style="light" />
+        </>
     );
 }
