@@ -25,6 +25,15 @@ export default function TabLayout() {
                     )
                 }} 
             />
+            <Tabs.Screen
+                name='wikipedia'
+                options={{
+                    title: "Wikipedia",
+                    tabBarIcon: ({color, focused}) => (
+                        <Ionicons name={focused ? 'book' : 'book-outline'} size={24} color={color} />
+                    )
+                }}
+            />
             <Tabs.Screen 
                 name="about" 
                 options={{ 
@@ -34,6 +43,7 @@ export default function TabLayout() {
                     )
                 }} 
             />
+
         </Tabs>
     );
 }
