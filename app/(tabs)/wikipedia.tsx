@@ -104,8 +104,7 @@ const styles = StyleSheet.create({
         gap: 8,
     },
     image: {
-        width: "100%",
-        height: 220,
+        flex: 1,
         borderRadius: 12,
         marginTop: 12,
     },
