@@ -7,10 +7,10 @@
     "icon": "./assets/images/icon.png",
     "scheme": "stickersmash",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.alvd.react",
+      "bundleIdentifier": "am.alvd.StickerSmash",
+      "appleTeamId": "MKGA8TB6E2",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -22,9 +22,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.alvd.react"
+      "package": "am.alvd.StickerSmash"
     },
     "web": {
       "output": "static",
@@ -43,7 +42,12 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-audio",
+      "./plugins/with-ios-pod-deployment-target.js",
+      "./plugins/with-ios-automatic-signing.js",
+      "expo-font",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,
